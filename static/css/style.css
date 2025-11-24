@@ -227,7 +227,7 @@ body {
 
 /* RIGHT FORM CARD */
 .form-card {
-    width: 70%;
+    width: 150%;
     background: #ffffff;
     padding: 45px;
     border-radius: 25px;
@@ -257,13 +257,14 @@ body {
 
 .form-grid {
     display: grid;
-    grid-template-columns: 45% 48%;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
+
 /* Make Your Name box smaller */
 .name-field input {
-    width: 80%;   /* Make smaller (70% or 60% if needed) */
+    width: 60%;   /* Make smaller (70% or 60% if needed) */
 }
 
 .form-group label {
@@ -274,7 +275,7 @@ body {
 
 .form-group input,
 .form-group textarea {
-    width: 100%;
+    width: 90%;
     padding: 14px;
     border-radius: 10px;
     border: 1px solid #DDE4EA;
@@ -307,3 +308,5 @@ textarea {
 .workspace-btn:hover {
     background: #0284C7;
 }
+
+
