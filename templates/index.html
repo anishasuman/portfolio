@@ -1,140 +1,395 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Anisha Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anisha Kumari | Cloud & Full Stack Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="/static/css/style.css">
-
-    <style>
-        html { scroll-behavior: smooth; }
-    </style>
 </head>
 
 <body>
-
-<!-- Top Header -->
-<div class="top-bar">
-    <span>📞 +91 9110929273</span>
-    <span>📧 anisha77suman1980@gmail.com</span>
-</div>
-
-<!-- Navigation Bar -->
-<nav class="navbar">
-    <div class="logo">ANISHA KUMARI</div>
-    <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#achievements">Achievements</a></li>
-        <li><a href="#education">Education</a></li>
-        <li>
-    <a 
-        class="resume-btn" 
-        href="https://www.canva.com/design/DAG5oi7YXJg/aoLYfXN8oa_6hbhlbNgMLQ/edit?utm_content=DAG5oi7YXJg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" 
-        target="_blank"
-        style="text-decoration:none; display:inline-block;"
-    >
-        Resume
+<!-- Floating Action Button -->
+    <a href="#home" class="floating-btn">
+        <i class="fas fa-arrow-up"></i>
     </a>
-</li>
 
-    </ul>
-</nav>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="profile.html" class="logo-container" id="logoLink">
+                    <span class="logo">AK</span>
+                </a>
+                <div class="nav-links">
+                    <a href="#home" class="active">Home</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#certification">Certifications</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#contact">Contact</a>
+                    <a href="https://www.canva.com/design/DAG5oi7YXJg/aoLYfXN8oa_6hbhlbNgMLQ/edit?utm_content=DAG5oi7YXJg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" 
+                       target="_blank" class="resume-btn">Resume</a>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-<!-- HERO SECTION -->
-<section class="hero" id="home">
-    <div class="left">
-        <h3>Clean, Modern & Professional</h3>
-        <h1>Hello, I'm <span>Anisha Kumari</span></h1>
-        <p class="subtext">
-            Cloud Computing Student & Developer with experience in AWS, Docker,
-            Java, Python, and modern web design. Passionate about building
-            scalable cloud applications, automation pipelines, and beautiful UI.
-        </p>
-
-       <div class="features">
-   <div class="f-box">⚡ Responsive</div>
-   <div class="f-box">💎 Clean Design</div>
-   <div class="f-box">🚀 Fast & Scalable</div>
-</div>
-
-<a href="#contact" class="get-in-touch-btn">Get In Touch</a>
-
-
-
-
-
-    </div>
-
-    <div class="right">
-        <img src="/static/images/myphoto.jpg" alt="My Photo">
-    </div>
-</section>
-
+    <!-- Hero Section -->
+    <section class="hero section" id="home">
+        <div class="hero__container container grid">
+            <div class="hero__content">
+                <span class="hero__greeting">HI THERE! I'M</span>
+                <h1 class="hero__title">Anisha <span>Kumari</span></h1>
+                <p class="hero__subtitle">Cloud & Full Stack Developer</p>
+                <p class="hero__description">
+                    I build digital experiences with modern technologies. Specializing in cloud solutions, 
+                    scalable applications, and beautiful interfaces. Let's create something amazing together!
+                </p>
+                <div class="hero__buttons">
+                    <a href="#contact" class="button button--primary">HIRE ME</a>
+                    <a href="#projects" class="button button--secondary">VIEW MY WORK</a>
+                </div>
+                <div class="hero__social">
+                    <a href="https://github.com/anishasuman" target="_blank" class="social-icon github" data-tooltip="GitHub" aria-label="GitHub Profile">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/anisha-kumari-68522426a/" target="_blank" class="social-icon linkedin" data-tooltip="LinkedIn" aria-label="LinkedIn Profile">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:anisha77suman1980@gmail.com" class="social-icon email" data-tooltip="Email Me" aria-label="Send Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero__img">
+                <img src="/static/images/myphoto.jpg" alt="Anisha Kumari" class="hero__profile-img">
+                <div class="hero__tech-stack">
+                    <div class="tech-icon"><i class="devicon-amazonwebservices-original"></i></div>
+                    <div class="tech-icon"><i class="devicon-docker-plain"></i></div>
+                    <div class="tech-icon"><i class="devicon-kubernetes-plain"></i></div>
+                    <div class="tech-icon"><i class="devicon-terraform-plain"></i></div>
+                </div>
+                
+                <!-- Certificate Badges -->
+                <div class="hero__certificates">
+                    <div class="certificate-badge" data-tooltip="AWS Certified Cloud Practitioner">
+                        <i class="fab fa-aws"></i>
+                        <span>AWS Certified</span>
+                    </div>
+                    <div class="certificate-badge" data-tooltip="Docker Certified Associate">
+                        <i class="fab fa-docker"></i>
+                        <span>Docker Certified</span>
+                    </div>
+                    <div class="certificate-badge" data-tooltip="Certified Kubernetes Administrator">
+                        <i class="fas fa-cubes"></i>
+                        <span>K8s Certified</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 <!-- SKILLS SECTION -->
-<section class="section" id="skills">
-    <h2>Skills</h2>
+    <section class="skills section" id="skills">
+        <h2 class="section__title">Skills & Expertise</h2>
+        <span class="section__subtitle">My technical proficiency</span>
 
-    <div class="content-box">
-        <h3>Technical Skills</h3>
-        <ul>
-            <li><b>Programming:</b> Java (Expert), Python (Expert), JavaScript</li>
-            <li><b>Frameworks:</b> React.js, Node.js, Spring Boot, HTML, CSS</li>
-            <li><b>Cloud & DevOps:</b> AWS (EC2, S3, Lambda, IAM, VPC), Docker, Kubernetes</li>
-            <li><b>Databases & Tools:</b> MongoDB, MySQL, Git, GitHub, Figma, Postman</li>
-            <li><b>Core Areas:</b> API Development, Serverless, Microservices</li>
-        </ul>
+        <div class="skills-container">
+            <!-- Programming -->
+            <div class="skill-category">
+                <h3>Programming</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="devicon-java-plain"></i>
+                        <span>Java</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-python-plain"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-javascript-plain"></i>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
 
-        <h3>Soft Skills</h3>
-        <ul>
-            <li>Problem Solving</li>
-            <li>Team Player</li>
-            <li>Project Management</li>
-            <li>Adaptability</li>
-            <li>Communication</li>
-        </ul>
-    </div>
-</section>
+            <!-- Frameworks -->
+            <div class="skill-category">
+                <h3>Frameworks</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="devicon-react-original"></i>
+                        <span>React.js</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-nodejs-plain"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-spring-plain"></i>
+                        <span>Spring Boot</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-html5-plain"></i>
+                        <span>HTML/CSS</span>
+                    </div>
+                </div>
+            </div>
 
-<!-- CERTIFICATIONS SECTION -->
-<section class="section" id="certifications">
-    <h2>Certifications</h2>
-    <div class="content-box">
-        <ul>
-            <li>AWS Cloud Practitioner Essentials – AWS</li>
-            <li>C++ OOPS and DSA Certification – CSE Pathshala (July 2025)</li>
-            <li>Ethical Hacking Training – LPU (Nov 2023)</li>
-            <li>Python Programming Workshop – LPU Tech Community</li>
-            <li>Docker & Container Essentials – Udemy / Coursera</li>
-        </ul>
-    </div>
-</section>
+            <!-- Cloud & DevOps -->
+            <div class="skill-category">
+                <h3>Cloud & DevOps</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="devicon-amazonwebservices-original"></i>
+                        <span>AWS</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-docker-plain"></i>
+                        <span>Docker</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-kubernetes-plain"></i>
+                        <span>Kubernetes</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-code-branch"></i>
+                        <span>CI/CD</span>
+                    </div>
+                </div>
+            </div>
 
-<!-- PROJECTS SECTION -->
-<section class="section" id="projects">
-    <h2>Projects</h2>
+            <!-- Databases -->
+            <div class="skill-category">
+                <h3>Databases</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="devicon-mongodb-plain"></i>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-mysql-plain"></i>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-postgresql-plain"></i>
+                        <span>PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
 
-    <div class="content-box">
-        <h3>1. Spring Boot Pet Clinic Deployment on AWS EC2</h3>
-        <p>
-            Full production-ready deployment on Amazon Linux EC2 with Apache, systemd,
-            reverse proxy, and secure configuration.
-        </p>
+            <!-- Tools -->
+            <div class="skill-category">
+                <h3>Tools</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="devicon-git-plain"></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-github-original"></i>
+                        <span>GitHub</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-figma-plain"></i>
+                        <span>Figma</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Postman</span>
+                    </div>
+                </div>
+            </div>
 
-        <h3>2. Serverless Image Resizer – AWS</h3>
-        <p>
-            Built a Lambda-based image processing pipeline triggered by S3 uploads.
-        </p>
+            <!-- Expertise -->
+            <div class="skill-category">
+                <h3>Expertise</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="fas fa-code"></i>
+                        <span>API Development</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-network-wired"></i>
+                        <span>Microservices</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-server"></i>
+                        <span>Serverless</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-sitemap"></i>
+                        <span>System Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <h3>3. AWS VPC – NAT Gateway Lifecycle Project</h3>
-        <p>
-            Designed VPC with public/private subnets, routing tables, and NAT Gateway validation.
-        </p>
+    <!-- CERTIFICATIONS SECTION -->
+    <section class="certifications section" id="certifications">
+        <h2 class="section__title">Certifications</h2>
+        <p class="section__subtitle">My professional certifications and training</p>
+        
+        <div class="certifications-container-wrapper">
+            <div class="certifications-container">
+            <div class="certification-card">
+                <div class="certification-icon">
+                    <i class="fab fa-aws"></i>
+                </div>
+                <h3>AWS Cloud Practitioner</h3>
+                <p>AWS Training & Certification</p>
+                <div class="certification-hover">
+                    <p>Valid: 2024</p>
+                    <a href="#" class="view-certificate">View Certificate</a>
+                </div>
+            </div>
 
-        <h3>4. Serverless Chatbot API</h3>
-        <p>
-            Built a chatbot backend using Flask + AWS Lambda + API Gateway.
-        </p>
+            <div class="certification-card">
+                <div class="certification-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>C++ OOPS and DSA</h3>
+                <p>CSE Pathshala (July 2025)</p>
+                <div class="certification-hover">
+                    <p>Issued: July 2025</p>
+                    <a href="#" class="view-certificate">View Certificate</a>
+                </div>
+            </div>
+
+            <div class="certification-card">
+                <div class="certification-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Ethical Hacking</h3>
+                <p>LPU (Nov 2023)</p>
+                <div class="certification-hover">
+                    <p>Issued: Nov 2023</p>
+                    <a href="#" class="view-certificate">View Certificate</a>
+                </div>
+            </div>
+
+            <div class="certification-card">
+                <div class="certification-icon">
+                    <i class="fab fa-python"></i>
+                </div>
+                <h3>Python Programming</h3>
+                <p>LPU Tech Community</p>
+                <div class="certification-hover">
+                    <p>Workshop Completion</p>
+                    <a href="#" class="view-certificate">View Certificate</a>
+                </div>
+            </div>
+
+            <div class="certification-card">
+                <div class="certification-icon">
+                    <i class="fab fa-docker"></i>
+                </div>
+                <h3>Docker & Container</h3>
+                <p>Udemy / Coursera</p>
+                <div class="certification-hover">
+                    <p>Container Essentials</p>
+                    <a href="#" class="view-certificate">View Certificate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects section" id="projects">
+        <h2 class="section__title">Projects</h2>
+        <p class="section__subtitle">Showcasing my development process and expertise</p>
+        
+        <div class="projects__container container">
+            <!-- Project 1 -->
+            <div class="project__card">
+                <div class="project__image">
+                    <img src="/static/images/store-it-preview.jpg" alt="AWS Networking">
+                    <div class="project__overlay">
+                        <div class="project__links">
+                            <a href="#" class="project__link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project__link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project__content">
+                    <h3>AWS Networking</h3>
+                    <p>Designed and implemented secure cloud infrastructure with VPC, subnets, and security groups.</p>
+                    <div class="project__tech">
+                        <span class="tech-tag">AWS VPC</span>
+                        <span class="tech-tag">Subnets</span>
+                        <span class="tech-tag">Security Groups</span>
+                        <span class="tech-tag">Route 53</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project__card">
+                <div class="project__image">
+                    <img src="/static/images/ec2-preview.jpg" alt="Spring Boot on AWS EC2">
+                    <div class="project__overlay">
+                        <div class="project__links">
+                            <a href="#" class="project__link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project__link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project__content">
+                    <h3>Spring Boot on AWS EC2</h3>
+                    <p>Deployed and configured Spring Boot application on AWS EC2 with CI/CD pipeline.</p>
+                    <div class="project__tech">
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">AWS EC2</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">GitHub Actions</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project__card">
+                <div class="project__image">
+                    <img src="/static/images/image-resizer-preview.jpg" alt="Serverless Image Resizer">
+                    <div class="project__overlay">
+                        <div class="project__links">
+                            <a href="#" class="project__link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project__content">
+                    <h3>Serverless Image Resizer</h3>
+                    <p>Automated image processing pipeline using AWS Lambda and S3 triggers.</p>
+                    <div class="project__tech">
+                        <span class="tech-tag">AWS Lambda</span>
+                        <span class="tech-tag">S3</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Serverless</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
     </div>
 </section>
 
@@ -258,5 +513,127 @@
 
 
 
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+    </script>
+    
+    <!-- Projects Script -->
+    <script src="/static/js/projects.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    
+    <!-- JavaScript for Infinite Carousel -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const container = document.querySelector('.certifications-container');
+            const wrapper = document.querySelector('.certifications-container-wrapper');
+            let cards = document.querySelectorAll('.certification-card');
+            const cardCount = cards.length / 2; // Since we have duplicates
+            let isPaused = false;
+            let animationId;
+            let scrollPosition = 0;
+            const scrollSpeed = 0.5; // Pixels per frame
+            const pauseOnHover = true;
+            const pauseOnInteraction = true;
+
+            // Clone cards for infinite effect
+            function cloneCards() {
+                const cardsToClone = Array.from(cards).slice(0, cardCount);
+                cardsToClone.forEach(card => {
+                    const clone = card.cloneNode(true);
+                    container.appendChild(clone);
+                });
+                cards = document.querySelectorAll('.certification-card');
+            }
+
+            // Initialize carousel
+            function initCarousel() {
+                cloneCards();
+                startAnimation();
+                
+                // Pause on hover
+                if (pauseOnHover) {
+                    wrapper.addEventListener('mouseenter', pauseAnimation);
+                    wrapper.addEventListener('mouseleave', resumeAnimation);
+                }
+                
+                // Pause on touch
+                if (pauseOnInteraction) {
+                    container.addEventListener('touchstart', pauseAnimation);
+                    container.addEventListener('touchend', resumeAnimation);
+                }
+            }
+
+            // Animation loop
+            function animate() {
+                if (!isPaused) {
+                    scrollPosition += scrollSpeed;
+                    container.style.transform = `translateX(-${scrollPosition}px)`;
+                    
+                    // Reset position when reaching the end of the duplicated content
+                    const containerWidth = container.scrollWidth / 2;
+                    if (scrollPosition >= containerWidth) {
+                        scrollPosition = 0;
+                    }
+                }
+                animationId = requestAnimationFrame(animate);
+            }
+
+            function startAnimation() {
+                if (!animationId) {
+                    animate();
+                }
+            }
+
+            function pauseAnimation() {
+                isPaused = true;
+            }
+
+            function resumeAnimation() {
+                isPaused = false;
+                if (!animationId) {
+                    animate();
+                }
+            }
+
+            function stopAnimation() {
+                if (animationId) {
+                    cancelAnimationFrame(animationId);
+                    animationId = null;
+                }
+            }
+
+            // Handle window resize
+            let resizeTimeout;
+            window.addEventListener('resize', function() {
+                clearTimeout(resizeTimeout);
+                resizeTimeout = setTimeout(() => {
+                    // Adjust scroll position on resize
+                    scrollPosition = scrollPosition % (container.scrollWidth / 2);
+                    container.style.transform = `translateX(-${scrollPosition}px)`;
+                }, 100);
+            });
+
+            // Initialize the carousel
+            initCarousel();
+
+            // Clean up on page unload
+            window.addEventListener('beforeunload', function() {
+                stopAnimation();
+                wrapper.removeEventListener('mouseenter', pauseAnimation);
+                wrapper.removeEventListener('mouseleave', resumeAnimation);
+                container.removeEventListener('touchstart', pauseAnimation);
+                container.removeEventListener('touchend', resumeAnimation);
+            });
+        });
+    </script>
 </body>
 </html>

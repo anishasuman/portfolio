@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anisha Kumari | Profile</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc;
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.875rem;
+            font-weight: 700;
+        }
+        .blob-shape {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #e5f1f7;
+            border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+            transform: rotate(-15deg);
+            z-index: 1;
+        }
+        .main-content {
+            z-index: 10;
+            position: relative;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8 md:p-12">
+    <div class="max-w-6xl mx-auto bg-white shadow-xl rounded-lg p-6 md:p-10 lg:p-16">
+        <!-- Header Section -->
+        <header class="mb-10 main-content">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-800 mb-2">
+                Hello, I am <span class="text-blue-600">Anisha Kumari</span>
+            </h1>
+            <p class="text-gray-600 max-w-2xl">
+                I'm a Cloud & Full Stack Developer with expertise in building scalable web applications and cloud solutions.
+            </p>
+        </header>
+
+        <main class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+            <!-- LEFT COLUMN (Main Content) -->
+            <div class="lg:col-span-2 space-y-12 main-content">
+                <!-- Profile Summary -->
+                <section>
+                    <p class="text-gray-700 mb-4">
+                        I'm passionate about cloud technologies and full-stack development, with a strong focus on creating efficient, scalable, and user-friendly applications. I enjoy solving complex problems and continuously learning new technologies to stay ahead in the ever-evolving tech landscape.
+                    </p>
+                    <p class="text-gray-700">
+                        With expertise in both frontend and backend development, I bring ideas to life through clean, maintainable code and intuitive user interfaces. I'm always excited to take on new challenges and collaborate with like-minded professionals.
+                    </p>
+                </section>
+
+                <!-- Contact Section -->
+                <section>
+                    <h2 class="section-title text-gray-800">Contact</h2>
+                    <div class="flex flex-col sm:flex-row flex-wrap gap-4 text-gray-700">
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-2 4l-5 5-5-5"></path>
+                            </svg>
+                            <a href="mailto:your.email@example.com" class="hover:text-blue-600 transition duration-300">your.email@example.com</a>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.058.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.901 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.901-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.065-.36 2.235-.421C8.4 2.165 8.786 2.15 12 2.15zm0 1.802c-3.205 0-3.584.015-4.859.074-.98.045-1.511.209-1.865.348-.466.16-.8.352-1.15.701-.35.35-.54.683-.701 1.15-.14.355-.303.884-.348 1.865-.06 1.274-.074 1.649-.074 4.859 0 3.211.015 3.586.074 4.859.045.98.209 1.51.348 1.865.16.466.352.801.701 1.15.35.35.684.54 1.15.701.355.14.884.303 1.865.348 1.274.06 1.649.075 4.859.075 3.211 0 3.586-.015 4.859-.075.98-.045 1.51-.209 1.865-.348.466-.16.8-.35 1.15-.701.35-.35.54-.684.701-1.15.14-.355.303-.884.348-1.865.06-1.274.075-1.649.075-4.844 0-3.196-.015-3.586-.075-4.859-.045-.98-.209-1.51-.348-1.865-.16-.466-.352-.8-.701-1.15-.35-.35-.684-.54-1.15-.701-.355-.14-.884-.303-1.865-.349C15.586 3.968 15.206 3.96 12 3.96zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm0-10.16c-3.396 0-6.16 2.764-6.16 6.16S8.604 18.16 12 18.16 18.16 15.396 18.16 12 15.396 5.84 12 5.84z"/>
+                            </svg>
+                            <a href="https://www.instagram.com/yourusername" target="_blank" class="hover:text-blue-600 transition duration-300">@yourusername</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Education Section -->
+                <section>
+                    <h2 class="section-title text-gray-800">Education</h2>
+                    
+                    <div class="space-y-4 text-gray-700">
+                        <div class="border-l-4 border-blue-500 pl-4">
+                            <p class="font-semibold">Your University Name | Year - Year</p>
+                            <p class="italic text-sm">Degree in Computer Science</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Core Skills Section -->
+                <section class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    <div>
+                        <h2 class="section-title text-gray-800">Technical Skills</h2>
+                        <ul class="list-disc ml-6 text-gray-700 space-y-1">
+                            <li>Cloud Computing (AWS, Azure)</li>
+                            <li>Full Stack Development</li>
+                            <li>DevOps & CI/CD</li>
+                            <li>Database Management</li>
+                            <li>API Development</li>
+                            <li>Containerization & Orchestration</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="section-title text-gray-800">Soft Skills</h2>
+                        <ul class="list-disc ml-6 text-gray-700 space-y-1">
+                            <li>Problem Solving</li>
+                            <li>Team Collaboration</li>
+                            <li>Time Management</li>
+                            <li>Communication</li>
+                            <li>Adaptability</li>
+                            <li>Continuous Learning</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            
+            <!-- RIGHT COLUMN (Image and Side Info) -->
+            <div class="lg:col-span-1 space-y-12 relative overflow-hidden">
+                <!-- Background Blob/Shape for Visual Appeal -->
+                <div class="hidden lg:block absolute inset-y-0 right-[-100px] w-full h-full">
+                    <div class="blob-shape"></div>
+                </div>
+
+                <!-- Image Placeholder -->
+                <div class="main-content pt-4 lg:pt-16">
+                    <div class="w-full h-80 lg:h-96 bg-gray-100 rounded-xl relative shadow-lg flex items-center justify-center border-4 border-dashed border-blue-500">
+                        <span class="text-gray-500 font-semibold text-lg">Your Photo</span>
+                    </div>
+                </div>
+
+                <!-- Languages Section -->
+                <section class="main-content">
+                    <h2 class="section-title text-gray-800">Languages</h2>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center bg-white border border-gray-200 p-3 rounded-xl shadow-md transition duration-300 hover:shadow-lg hover:scale-[1.01] cursor-pointer">
+                            <span class="font-bold text-gray-800">English</span>
+                            <span class="bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full">Professional</span>
+                        </div>
+                        <div class="flex justify-between items-center bg-white border border-gray-200 p-3 rounded-xl shadow-md transition duration-300 hover:shadow-lg hover:scale-[1.01] cursor-pointer">
+                            <span class="font-bold text-gray-800">Hindi</span>
+                            <span class="bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full">Native</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        
+        <!-- Technologies Section -->
+        <section class="mt-16 main-content">
+            <h2 class="section-title text-gray-800">Technologies</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-8">
+                <!-- Group 1 -->
+                <div class="space-y-4">
+                    <!-- Frontend -->
+                    <div class="flex items-center space-x-4">
+                        <div class="w-8 h-8 flex items-center justify-center bg-blue-600 text-white font-bold rounded-md">FE</div>
+                        <div class="flex-1">
+                            <p class="font-semibold text-gray-800">Frontend</p>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                                <div class="h-2 bg-blue-500 rounded-full w-[90%]"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Backend -->
+                    <div class="flex items-center space-x-4">
+                        <div class="w-8 h-8 flex items-center justify-center bg-green-600 text-white font-bold rounded-md">BE</div>
+                        <div class="flex-1">
+                            <p class="font-semibold text-gray-800">Backend</p>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                                <div class="h-2 bg-green-500 rounded-full w-[85%]"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cloud -->
+                    <div class="flex items-center space-x-4">
+                        <div class="w-8 h-8 flex items-center justify-center bg-yellow-600 text-white font-bold rounded-md">CL</div>
+                        <div class="flex-1">
+                            <p class="font-semibold text-gray-800">Cloud</p>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                                <div class="h-2 bg-yellow-500 rounded-full w-[80%]"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Group 2 -->
+                <div class="space-y-4">
+                    <!-- DevOps -->
+                    <div class="flex items-center space-x-4">
+                        <div class="w-8 h-8 flex items-center justify-center bg-red-600 text-white font-bold rounded-md">DO</div>
+                        <div class="flex-1">
+                            <p class="font-semibold text-gray-800">DevOps</p>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                                <div class="h-2 bg-red-500 rounded-full w-[75%]"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Database -->
+                    <div class="flex items-center space-x-4">
+                        <div class="w-8 h-8 flex items-center justify-center bg-purple-600 text-white font-bold rounded-md">DB</div>
+                        <div class="flex-1">
+                            <p class="font-semibold text-gray-800">Database</p>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                                <div class="h-2 bg-purple-500 rounded-full w-[85%]"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tools -->
+                    <div class="flex items-center space-x-4">
+                        <div class="w-8 h-8 flex items-center justify-center bg-indigo-600 text-white font-bold rounded-md">TL</div>
+                        <div class="flex-1">
+                            <p class="font-semibold text-gray-800">Tools</p>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                                <div class="h-2 bg-indigo-500 rounded-full w-[80%]"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
